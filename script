@@ -1,0 +1,15 @@
+const button = document.getElementById("planBtn");
+const outfit = document.getElementById("outfit");
+
+const outfits = [
+  "Casual jeans with a beige sweater",
+  "Black dress and white sneakers",
+  "Oversized hoodie with leggings",
+  "Denim jacket with a midi skirt",
+  "White shirt with tailored trousers"
+];
+
+button.addEventListener("click", () => {
+  const random = outfits[Math.floor(Math.random() * outfits.length)];
+  outfit.textContent = random;
+});
